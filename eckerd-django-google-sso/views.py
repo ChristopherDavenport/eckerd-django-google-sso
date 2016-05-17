@@ -1,8 +1,17 @@
 """Views for the eckerd-django-google-sso app."""
-# from django.views.generic import TemplateView
+from django.shortcuts import redirect
+from django.contrib.auth import logout as auth_logout
 
-# from . import models
+
+def logout(request):
+    """Logs out user"""
+    auth_logout(request)
+    return redirect('http://its.eckerd.edu')
 
 
-# class YourView(TemplateView):
-#    template_name = 'eckerd-django-google-sso/default.html'
+def context(**extra):
+    return dict(**extra)
+
+
+def login(request):
+    return redirect('/login/google-oauth2/')
