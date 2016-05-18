@@ -29,7 +29,7 @@ http://docs.python.org/2/distutils/sourcedist.html
 """
 import os
 from setuptools import setup, find_packages
-import eckerd-django-google-sso as app
+
 
 
 dev_requires = [
@@ -47,9 +47,9 @@ def read(fname):
 
 setup(
     name="eckerd-django-google-sso",
-    version=app.__version__,
-    description=read('DESCRIPTION'),
-    long_description=read('README.rst'),
+    version='0.0.1',
+    description=(read('DESCRIPTION')),
+    long_description=(read('README.rst')),
     license='The MIT License',
     platforms=['OS Independent'],
     keywords='django, app, reusable, google, sso',
