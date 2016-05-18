@@ -128,7 +128,7 @@ If you want to contribute to this project, please perform the following steps
 
     # Fork this repository
     # Clone your fork
-    mkvirtualenv -p python2.7 eckerd-django-google-sso
+    mkvirtualenv -p python3.5 eckerd-django-google-sso
     make develop
 
     git co -b feature_branch master
