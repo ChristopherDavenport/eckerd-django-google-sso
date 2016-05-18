@@ -27,6 +27,8 @@ Add ``eckerd-django-google-sso`` to your ``INSTALLED_APPS``
     INSTALLED_APPS = (
         ...,
         'eckerd-django-google-sso',
+        'social.apps.django_app.default',
+        'django12factor',
     )
 
 Add the ``eckerd-django-google-sso`` URLs to your ``urls.py``
@@ -48,7 +50,7 @@ Don't forget to migrate your database
 
 .. code-block:: bash
 
-    ./manage.py migrate eckerd-django-google-sso
+    ./manage.py migrate
 
 
 Usage
