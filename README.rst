@@ -16,7 +16,7 @@ To get the latest commit from GitHub
 
 .. code-block:: bash
 
-    pip install -e git+git://github.com/christopherdavenport/eckerd-django-google-sso.git#egg=eckerd-django-google-sso
+    pip install -e git+git://github.com/EckerdCollege/eckerd-django-google-sso.git#egg=eckerd-django-google-sso
 
 TODO: Describe further installation steps (edit / remove the examples below):
 
